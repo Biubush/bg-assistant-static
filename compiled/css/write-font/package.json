@@ -1,0 +1,28 @@
+{
+  "name": "cn-fontsource-yozai-regular",
+  "description": "本字体是一款基于 Y.OzFont 的手写风格的字体。利用原字体中已有的笔划和部件，通过拼接和调整造出新字",
+  "version": "1.0.9",
+  "repository": "https://github.com/wc-ex/cn-fontsource",
+  "keywords": [
+    "cn",
+    "cnfont",
+    "cn-font",
+    "fontsource",
+    "悠哉字体"
+  ],
+  "font": {
+    "name": "悠哉字体",
+    "type": "opensource",
+    "fontClass": [
+      "悠哉",
+      "手写"
+    ],
+    "link": "https://github.com/lxgw/yozai-font",
+    "version": "Version 0.85;October 1, 2020;FontCreator 13.0.0.2613 64-bit",
+    "familyName": "Yozai",
+    "subfamilyName": "Regular",
+    "copyright": "Copyright (C) 2020 LXGW. Original Font Data Copyright (C) Y.OzVox.",
+    "characterCount": 20905
+  },
+  "license": "SIL Open Font License 1.1"
+}
