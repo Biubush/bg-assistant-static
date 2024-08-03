@@ -241,7 +241,7 @@ $(document).ready(function () {
                     icon: "error",
                     title: "提交失败",
                     text: msg,
-                    
+                    showConfirmButton: true,
                   });
                 $("#overlay").hide()
             }
