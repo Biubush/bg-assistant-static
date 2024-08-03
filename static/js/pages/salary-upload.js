@@ -224,14 +224,24 @@ $(document).ready(function () {
             contentType: false, // 不设置内容类型
             success: function (response) {
                 Swal2.fire({
+                    position: "center",
                     icon: "success",
-                    title: "感谢您的配合，已上传成功",
+                    title: "感谢您的配合，您的报表已成功提交！",
+                    showConfirmButton: false,
+                    timer: 2000
                 })
-                location.reload();
+                    .then(() => {
+                        location.reload();
+                    });
             },
             error: function (xhr, textStatus, errorThrown) {
                 response = JSON.parse(xhr.responseText);
-                alert(response.msg);
+                var msg= response.msg;
+                Swal2.fire({
+                    icon: "error",
+                    title: "提交失败",
+                    text: msg,
+                  });
                 $("#overlay").hide()
             }
         });
