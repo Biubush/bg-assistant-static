@@ -223,8 +223,10 @@ $(document).ready(function () {
             processData: false, // 不处理数据
             contentType: false, // 不设置内容类型
             success: function (response) {
-                console.log(response);
-                alert(response.msg);
+                Swal2.fire({
+                    icon: "success",
+                    title: "感谢您的配合，已上传成功",
+                })
                 location.reload();
             },
             error: function (xhr, textStatus, errorThrown) {
