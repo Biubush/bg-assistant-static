@@ -241,6 +241,7 @@ $(document).ready(function () {
                     icon: "error",
                     title: "提交失败",
                     text: msg,
+                    
                   });
                 $("#overlay").hide()
             }
