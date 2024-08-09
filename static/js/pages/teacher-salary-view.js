@@ -175,12 +175,12 @@ function deletTask() {
 function editsalary(index) {
     var value = prompt("请输入新的工资", "");
     var salary = Number(value);
-    // 判断是否为非0数字
-    if (!isNaN(salary) && salary !== 0) {
-        // 输出非0数字
+    // 判断是否为数字
+    if (!isNaN(salary)) {
+        // 输出数字
         console.log(salary);
     } else {
-        alert("你输入的不是非0数字。");
+        alert("你输入的不是数字。");
         return null;
     }
     $('#overlay').show();
